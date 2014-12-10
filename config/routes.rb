@@ -6,9 +6,11 @@ Rails.application.routes.draw do
   root 'static_pages#index'
   # path 'controller#method'
 
-  get '/dog' => 'static_pages#cat'
+  get '/exercises' => 'static_pages#exercises'
   # dog_path -> '/dog'
+  get '/aboutme' => 'static_pages#aboutme'
 
+  get '/portfolio' => 'static_pages#portfolio'
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
 

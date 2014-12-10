@@ -4,7 +4,15 @@ class StaticPagesController < ApplicationController
     # so we are just going to render page 'index.html'
   end
 
-  def dog
-    # @num = 1
+  def exercises
+    
+  end
+
+  def aboutme
+
+  end
+
+  def portfolio
+
   end
 end
