@@ -14,7 +14,7 @@
     linear-gradient(
       rgba(0, 0, 0, 0.4), 
       rgba(0, 0, 0, 0.4)
-    ),url("alexchoisaikungtree.jpg") no-repeat;
+    ), image-url("alexchoisaikungtree.jpg") no-repeat;
   margin: 0 auto;
   max-height: 1200px;
   height: 888px;
