@@ -1,7 +1,14 @@
 .cc-body {
   margin: 0;
   padding: 0;
-  background-color: #222;
+  background-color: #000;
+}
+
+.cc-jumbo {
+  margin: 100px 0 0 0 ;
+  background-color: black;
+  border:1px;
+  // text-align: center;
 }
 
 .cc-no-margin {
@@ -12,13 +19,11 @@
 .cc-splash {
   background: 
     linear-gradient(
-      rgba(0, 0, 0, 0.4), 
-      rgba(0, 0, 0, 0.4)
+      rgba(0, 0, 0, 0.45), 
+      rgba(0, 0, 0, 0.45)
     ), image-url('alexchoisaikungtree.jpg') no-repeat;
-  margin: 0 auto;
-  max-height: 1200px;
-  height: 888px;
   background-position: center;
+  width: cover;
 }
 
 .cc-intro {
@@ -72,6 +77,13 @@ font-family: 'Permanent Marker', cursive;*/
   padding: 30px 0;
 }
 
+#ccc-home:hover, #ccc-about-me:hover, #ccc-portfolio:hover, #ccc-links:hover {
+  color: #222;
+  background: #FFF;
+  // font-size:110%;
+  font-weight: bolder;
+}
+
 .cc-exercises {
   font-size: 55px;
   text-align: center;
@@ -89,7 +101,7 @@ font-family: 'Permanent Marker', cursive;*/
 
 /*width sized styling*/
 
-@media(max-width: 760px){
+@media(max-width: 640px){
   .cc-body{
     margin:15px;
   }
@@ -97,19 +109,21 @@ font-family: 'Permanent Marker', cursive;*/
     height: 800px;
   }
   .cc-heading {
-    font-size: 48px;
+    font-size: 40px;
     height: 120px;
   }
   .cc-heading-fill {
     font-size: 24px;
   }
-  .cc-navbar .cc-navbutton-group .cc-navbutton {
-    height:90px;
-    font-size:18px;
+  #ccc-home, #ccc-about-me, #ccc-portfolio, #ccc-links {
+    font-size: 11px;
+  }
+  .cc-intro {
+    
   }
 }
 
-@media(min-width: 760px){
+@media(min-width: 640px){
   .cc-body {
     margin: 20px 0;
   }
@@ -122,8 +136,50 @@ font-family: 'Permanent Marker', cursive;*/
   .cc-heading-fill {
     font-size: 25px;
   }
-  .cc-navbar .cc-navbutton-group .cc-navbutton {
-    height: 100px;
+}
+
+@media(min-width: 800px){
+  .cc-body {
+    margin: 20px 0;
+  }
+  .cc-splash {
+    height: 800px;
+  }
+  .cc-heading {
+    font-size: 58px;
+  }
+  .cc-heading-fill {
+    font-size: 25px;
+  }
+}
+
+@media(min-width: 1024px){
+  .cc-body {
+    margin: 20px 0;
+  }
+  .cc-splash {
+    height: 800px;
+    margin: 10px;
+  }
+  .cc-heading {
+    font-size: 58px;
+  }
+  .cc-heading-fill {
+    font-size: 25px;
+  }
+}
+
+@media(min-width: 1280px){
+  .cc-body {
+    margin: 20px 0;
+  }
+  .cc-splash {
+    height: 800px;
+  }
+  .cc-heading {
+    font-size: 58px;
+  }
+  .cc-heading-fill {
     font-size: 25px;
   }
 }

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Rails Basic Template</title>
+    <title>Clement Choi Web Dev</title>
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
     <link href='http://fonts.googleapis.com/css?family=Permanent+Marker|Cherry+Cream+Soda|Syncopate|Russo+One|Sigmar+One|Gloria+Hallelujah|Architects+Daughter|Audiowide|Rock+Salt|Luckiest+Guy' rel='stylesheet' type='text/css'>
@@ -10,27 +10,28 @@
   </head>
 
   <body class='container-fluid row cc-body'>
-    <div class="cc-splash col-xs-12">
-      <div class="cc-heading">CLEMENT CHOI
-        <div class="cc-heading-fill">Web Developer
+    <div class="col-xs-12">
+      <div class="cc-splash">
+        <div class="cc-heading">CLEMENT CHOI
+          <div class="cc-heading-fill">Web Development
+          </div>
         </div>
-      </div>
-    <nav>
-      <div class="row">
-        <div class="col-xs-12 cc-navbar">
-          <!-- <a id="ccc-home" class="col-xs-3" href="/">Home</a> -->
-          <%= link_to "Home", root_path, :id => 'ccc-home', :class => 'col-xs-3' %>
-          <%= link_to "About me", aboutme_path, :id => "ccc-about-me", :class => "col-xs-3" %>
-          <%= link_to "Portfolio", portfolio_path, :id => "ccc-portfolio", :class => "col-xs-3" %>
-          <a id="ccc-links" class="col-xs-3" href="/exercises">Playground</a>
+      <nav>
+        <div class="row">
+          <div class="col-xs-12 cc-navbar">
+            <!-- <a id="ccc-home" class="col-xs-3" href="/">Home</a> -->
+            <%= link_to "Home", root_path, :id => 'ccc-home', :class => 'col-xs-3' %>
+            <%= link_to "About me", aboutme_path, :id => "ccc-about-me", :class => "col-xs-3" %>
+            <%= link_to "Portfolio", portfolio_path, :id => "ccc-portfolio", :class => "col-xs-3" %>
+            <a id="ccc-links" class="col-xs-3" href="/exercises">Playground</a>
+          </div>
         </div>
+      </nav>
+
+
+      <%= yield %>
+
       </div>
-    </nav>
-
-
-    <%= yield %>
-
-
     </div>
   </body>
 
