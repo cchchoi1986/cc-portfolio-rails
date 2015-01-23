@@ -4,26 +4,29 @@
     <title>Clement Choi Web Dev</title>
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+    <%= favicon_link_tag 'cc.jpeg' %>
     <link href='http://fonts.googleapis.com/css?family=Permanent+Marker|Cherry+Cream+Soda|Syncopate|Russo+One|Sigmar+One|Gloria+Hallelujah|Architects+Daughter|Audiowide|Rock+Salt|Luckiest+Guy' rel='stylesheet' type='text/css'>
     
     <%= csrf_meta_tags %>
   </head>
 
-  <body class='container-fluid row cc-body'>
-    <div class="col-xs-12">
-      <div class="cc-splash">
+  <body class='container-fluid cc-body cc-splash'>
+    <div class="row">
+      <div class="col-xs-12">
+
         <div class="cc-heading">CLEMENT CHOI
           <div class="cc-heading-fill">Web Development
           </div>
         </div>
+      
       <nav>
         <div class="row">
-          <div class="col-xs-12 cc-navbar">
+          <div class="cc-navbar">
             <!-- <a id="ccc-home" class="col-xs-3" href="/">Home</a> -->
-            <%= link_to "Home", root_path, :id => 'ccc-home', :class => 'col-xs-3' %>
-            <%= link_to "About me", aboutme_path, :id => "ccc-about-me", :class => "col-xs-3" %>
-            <%= link_to "Portfolio", portfolio_path, :id => "ccc-portfolio", :class => "col-xs-3" %>
-            <a id="ccc-links" class="col-xs-3" href="/exercises">Playground</a>
+            <a href="/" class="ccc-home col-xs-3"><div>Home<i class="fa fa-home"></i></div></a>
+            <a href="/aboutme" class="ccc-about-me col-xs-3"><div>About Me<i class="fa fa-smile-o"></i></div></a>
+            <a href="/portfolio" class="ccc-portfolio col-xs-3"><div>Portfolio<i class="fa fa-folder-open-o"></i></div></a>
+            <a href="/exercises" class="ccc-links col-xs-3"><div>Links<i class="fa fa-globe"></i></div></a></div>
           </div>
         </div>
       </nav>
